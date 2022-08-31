@@ -24,7 +24,7 @@ async function run(){
         });
 
 
-        // ------------ Order -----------
+        // ------------ Order section -----------
 
         app.get('/order', async (req, res) => {
             const query = {};
@@ -54,7 +54,7 @@ async function run(){
             res.send(result);
         })
 
-        // ---------- Post Add --------------
+        // ---------- Post Add from server --------------
 
         app.post('/product',async (req,res) =>{
             const newProduct = req.body;
